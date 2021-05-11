@@ -1,0 +1,5 @@
+语法：python model_mult.py [*-mult0.ali文件名] [*.ali文件名] [pdb文件数量] [reset_pdb名字1] [reset_pdb名字2] [reset_pdb名字3] .........
+
+示例：python model_mult.py test-mult0 INPN-36-115 3 reset_INPN36-74 reset_INPN-72-86 reset_INPN-84-115
+
+输出：大量文件？

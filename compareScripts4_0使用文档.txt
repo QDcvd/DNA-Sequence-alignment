@@ -1,0 +1,5 @@
+语法：python compareScripts4_0.py [csv文件]
+
+示例：python compareScripts4_0.py test.csv
+
+输出：两个ali文件，三个reset_开头的pdb文件。

@@ -1,0 +1,16 @@
+
+>P1;reset_INPN36-74
+structureX:INPN36-74.pdb:1  :A:+39 :A:::-1.00:-1.00
+VESKYWQSTRRHENGLVGLLWGAGTSAFLSVHADARWIV-----------------------------------------*
+
+>P1;reset_INPN-72-86
+structureX:INPN-72-86.pdb:37  :A:+15 :A:::-1.00:-1.00
+------------------------------------WIVCEVAVADIISLE-----------------------------*
+
+>P1;reset_INPN-84-115
+structureX:INPN-84-115.pdb: 49  :A:+32 :A:::-1.00:-1.00
+------------------------------------------------SLEEPGMVKFPRAEVVHVGDRISASHFISARQ*
+
+>P1;INPN-36-115
+sequence:INPN-36-115:     : :     : ::: 0.00: 0.00
+VESKYWQSTRRHENGLVGLLWGAGTSAFLSVHADARWIVCEVAVADIISLEEPGMVKFPRAEVVHVGDRISASHFISARQ*
