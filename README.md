@@ -196,34 +196,31 @@ UnboundLocalError: local variable 'initial' referenced before assignment
 
 在这里就大功告成了，没有出现任何的错误报告。第一步的比对完成。
 这时候我们查看我们的文件夹应该是这样的：
- 
+
+![b731be598b9fd350641c96819314405](https://user-images.githubusercontent.com/54057111/117901552-2b21ba00-b2fe-11eb-8c09-24adf2be680f.png)
 
 我们可以看到，程序生成了我们所需的一些文件，这些文件是用来做多模板拼接的。
  
 接下来进入多模板拼接
-2、进行多模板拼接（用于获取xxx.B99990001pdb文件）
+
+# 2、进行多模板拼接（用于获取xxx.B99990001pdb文件）
 
 
 
 打开我们的cmd窗口，在这里我们输入命令：
+
 python model_mult.py test-mult0 chi_bind_spycatcher 3 reset_model2 reset_EGFP-LINKER-SPYCATCHER.B99990001 reset_model1
  
 要注意的是，reset_*.pdb名字也有顺序的，按头部，身体，尾部的顺序输入。
 
 
 这里是命令的语法：
+
 python model_mult.py [*-mult0.ali文件名] [*.ali文件名] [pdb文件数量] [reset_pdb名字1] [reset_pdb名字2] [reset_pdb名字3] .........
 
 输入命令后回车：
  
-
-
-
-
-
-
-
-
+![362d3b4bd0ad04a2967366d4d285c2b](https://user-images.githubusercontent.com/54057111/117901613-455b9800-b2fe-11eb-9b26-7892500af300.png)
 
 在这里，这里也有个错误产生：
  
@@ -231,14 +228,23 @@ python model_mult.py [*-mult0.ali文件名] [*.ali文件名] [pdb文件数量] [
 
 我们接下来在cmd窗口输入python add_A.py reset_EGFP-LINKER-SPYCATCHER.B99990001.pdb
  
+![image](https://user-images.githubusercontent.com/54057111/117901643-56a4a480-b2fe-11eb-9411-b6cab85e80c5.png)
 
 回车
  
 这个就是我们修复好的文件了
+
+![image](https://user-images.githubusercontent.com/54057111/117901661-62906680-b2fe-11eb-9ccd-730fba18b467.png)
+
+
 修复前是长这样的：
- 
+
+![image](https://user-images.githubusercontent.com/54057111/117901670-67551a80-b2fe-11eb-84b2-806909562182.png)
+
 修复后是长这样的：
  
+![image](https://user-images.githubusercontent.com/54057111/117901675-6a500b00-b2fe-11eb-855c-3fd755d8ff8b.png)
+
 
 接下来我们把原来的reset_EGFP-LINKER-SPYCATCHER.B99990001.pdb删掉，把我们生成的reset_reset_EGFP-LINKER-SPYCATCHER.B99990001.pdb改名为reset_EGFP-LINKER-SPYCATCHER.B99990001.pdb。
 
@@ -246,20 +252,28 @@ python model_mult.py [*-mult0.ali文件名] [*.ali文件名] [pdb文件数量] [
 回车
 
 弹出一大串东西
+
+![image](https://user-images.githubusercontent.com/54057111/117901704-7c31ae00-b2fe-11eb-8077-da5e88f4455d.png)
  
 表明我们这次运行得非常好，终于没有错误了。耐心等待。
 
  
 看到这里，表明我们多模板拼接已经完成。
 
-3、拿出pdb文件，并检查
+# 3、拿出pdb文件，并检查
 运行完成后，此时我们的文件夹应该是这样的：
  
+![image](https://user-images.githubusercontent.com/54057111/117901725-8d7aba80-b2fe-11eb-8af5-b916e025234d.png)
+ 
 其中，这个文件是我们需要的：
+
+![image](https://user-images.githubusercontent.com/54057111/117901719-8784d980-b2fe-11eb-8399-e3ff3bc009f9.png)
+
  
 我们拿出这个pdb文件，打开pymol，加载这个pdb文件看看长啥样先。
 
- 
+![image](https://user-images.githubusercontent.com/54057111/117901740-97042280-b2fe-11eb-9a5f-594128c59bf8.png)
+
 整体的结果看起来不错，没有出现一条羊肉串的样子，此时我们可以拿出这个文件出来了。
 注意：拿出chi_bind_spycatcher.B99990001.pdb文件。
 
