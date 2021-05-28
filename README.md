@@ -9,7 +9,8 @@
 
 (所需文件如上)
 
-# 1、进行序列比对（用于获取xxx-mult.ali文件）
+# 使用方法
+## 1、进行序列比对（用于获取xxx-mult.ali文件）
 获取以上文件之后，我们需要进行序列比对。这是进行多模板拼接的必要前提。多模板拼接需要有xxx-mult.ali文件等一系列有效的pdb文件。
 
 首先我们先编写csv文件，用于作为compareScripts4_0.py脚本文件的输入。
@@ -201,7 +202,7 @@ UnboundLocalError: local variable 'initial' referenced before assignment
  
 接下来进入多模板拼接
 
-# 2、进行多模板拼接（用于获取xxx.B99990001pdb文件）
+## 2、进行多模板拼接（用于获取xxx.B99990001pdb文件）
 
 
 
@@ -258,7 +259,7 @@ python model_mult.py [*-mult0.ali文件名] [*.ali文件名] [pdb文件数量] [
  
 看到这里，表明我们多模板拼接已经完成。
 
-# 3、拿出pdb文件，并检查
+## 3、拿出pdb文件，并检查
 运行完成后，此时我们的文件夹应该是这样的：
  
 ![image](https://user-images.githubusercontent.com/54057111/117901725-8d7aba80-b2fe-11eb-8af5-b916e025234d.png)
