@@ -1,0 +1,5 @@
+记于2021. 3.2
+
+使用方法：
+语法：python add_chain_v1.py [文件名字] [链名]
+使用例 :  python add_chain.v1.py INPN36-74.pdb A      (注：加入或更改成A链)
