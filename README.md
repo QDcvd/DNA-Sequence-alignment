@@ -227,6 +227,10 @@ python model_mult.py [*-mult0.ali文件名] [*.ali文件名] [pdb文件数量] [
 
 我们接下来在cmd窗口输入python add_A.py reset_EGFP-LINKER-SPYCATCHER.B99990001.pdb
  
+注意：在新版本我将add_A.py换成add_chain_v2.py 所以应该在cmd输入：
+ 
+python add_chain_v2.py reset_EGFP-LINKER-SPYCATCHER.B99990001.pdb A
+ 
 ![image](https://user-images.githubusercontent.com/54057111/117901643-56a4a480-b2fe-11eb-9411-b6cab85e80c5.png)
 
 回车
